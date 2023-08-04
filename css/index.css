@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+.layout{
+    background-color: #ddd;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px 10px;
+    font-size: large;
+}
+@media(max-width: 991px){
+    .layout{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(10, auto) !important;
+        overflow: hidden;
+        padding: 15px;
+    }
+    .osama{
+        grid-area: 1/1/1/2 !important;
+    }
+    .Ahmed{
+        grid-area: 2/1/3/2 !important;
+    }
+    .Shady{
+        grid-area: 3/1/4/2 !important;
+    }
+    .Ibrahim{
+        grid-area: 4/1/5/2 !important;
+    }
+    .Mahmoud{
+        grid-area: 5/1/6/2 !important;
+    }
+    .Ezz{
+        grid-area: 6/1/7/2 !important;
+    }
+    .MohamedSayed{
+        grid-area: 7/1/8/2 !important;
+    }
+    .IbrahimSayed{
+        grid-area: 8/1/9/2 !important;
+    }
+    .Eman{
+        grid-area: 9/1/10/2 !important;
+    }
+
+    .Gamal{
+        grid-area: 10/1/11/2 !important;
+    } 
+}
+.osama{
+    background-color: white;
+    color: black;
+    grid-area: 1/1/2/5;
+}
+.Ahmed{
+    background-color: white;
+    color: black;
+    grid-area: 1/5/2/7;
+}
+.Shady{
+    background-color: black;
+    color: white;
+    grid-area: 1/7/4/9;
+}
+.Ibrahim{
+    background-color: white;
+    color: black;
+    grid-area: 2/1/4/span 2;
+}
+.Mahmoud{
+    background-color: black;
+    color: white;
+    grid-area: 2/3/3/span 4;
+}
+.Ezz{
+    background-color: white;
+    color: black;
+    grid-area: 3/3/4/span 4;
+}
+.MohamedSayed{
+    background-color: white;
+    color: black;
+    grid-area: 4/1/5/span 2;
+}
+.IbrahimSayed{
+    background-color: black;
+    color: white;
+    grid-area: 4/3/5/span 2;
+}
+.Eman{
+    background-color: white;
+    color: black;
+    grid-area: 4/7/5/span 2;
+}
+.Gamal{
+    background-color: white;
+    color: black;
+    grid-area: 4/5/5/span 2;
+}
+h4{
+    color: gray;
+}
+.layout div{
+    box-sizing: border-box;
+    transition: border 0.3s;
+    border-bottom: 5px solid red;
+    padding: 20px;
+}
+.layout div:hover{
+    border:5px solid red;
+}
